@@ -923,3 +923,136 @@ footer .copyright {
     font-size: 18px;
   }
 }
+
+
+
+
+
+@media only screen and (max-width: 767px) {
+  /* Top bar */
+  .top-bar {
+    flex-direction: column;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .top-bar .left, .top-bar .right {
+    margin: 5px 0;
+  }
+
+  /* Navbar */
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar .icons {
+    margin-top: 10px;
+  }
+
+  /* Hero section */
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero .hero-text h1 {
+    font-size: 20px;
+  }
+
+  .search-bar {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .search-bar input, .search-bar button {
+    width: 100%;
+  }
+
+  .hero-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Features */
+  .features {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  /* Product Cards Grid */
+  .product-items-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+
+  .items-container {
+    width: 100%;
+  }
+
+  /* Three Card Section */
+  .container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .card img {
+    width: 100%;
+  }
+
+  /* Fresh Veg Section */
+  .veg-cards-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .veg-card img {
+    width: 100%;
+  }
+
+  /* Exotic Section */
+  .exotic-hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .exotic-image-container img {
+    width: 100%;
+  }
+
+  /* Bestseller Products */
+  .products {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .product-card img {
+    width: 100%;
+  }
+
+  /* Footer */
+  .footer-cols {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-top input, .footer-top button {
+    width: 100%;
+  }
+}
