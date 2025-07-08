@@ -1,0 +1,334 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  padding: 10px 15px;
+  background-color: #7bb32e;
+  color: white;
+  border-radius: 5px;
+}
+
+/* Top Bar */
+.top-bar {
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  font-size: 14px;
+  flex-wrap: wrap;
+}
+
+.top-bar .left i {
+  margin-right: 5px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #7bb32e;
+  color: white;
+  padding: 10px 20px;
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar nav ul {
+  display: flex;
+  gap: 15px;
+}
+
+.navbar .icons i {
+  margin: 0 8px;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px;
+  background-color: #e8f5e9;
+}
+
+.hero-text {
+  flex: 1 1 300px;
+  padding: 20px;
+}
+
+.hero-image {
+  flex: 1 1 300px;
+  position: relative;
+}
+
+.hero-image .image-text {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: #000000a0;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.search-bar {
+  display: flex;
+  margin-top: 15px;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 8px;
+}
+
+/* Features */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 30px;
+}
+
+.feature-box {
+  text-align: center;
+}
+
+/* Product Heading */
+.productsheading {
+  text-align: center;
+  padding: 20px;
+}
+
+.homeneeds {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.options {
+  padding: 8px 12px;
+  border: 1px solid #7bb32e;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.options.active {
+  background-color: #7bb32e;
+  color: white;
+}
+
+/* Product Cards */
+.product-items-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.items-container {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+}
+
+.cta-container {
+  margin-top: 10px;
+}
+
+/* Three Cards */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  flex: 1 1 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+
+.card .info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 10px;
+}
+
+/* Fresh Veg Section */
+.fresh-veg-section {
+  padding: 20px;
+}
+
+.veg-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.veg-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.veg-footer {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Exotic Section */
+.exotic-hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px;
+  background: #fff3e0;
+}
+
+.exotic-content {
+  flex: 1 1 300px;
+}
+
+.exotic-image-container {
+  flex: 1 1 300px;
+  text-align: center;
+  position: relative;
+}
+
+.price-circle {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #ff9800;
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+/* Popular Products */
+.products {
+  padding: 20px;
+  text-align: center;
+}
+
+.products .product-card {
+  display: inline-block;
+  width: 250px;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+}
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.footer-top input {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  flex: 1 1 200px;
+}
+
+.footer-cols {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .navbar nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero {
+    flex-direction: column;
+  }
+
+  .search-bar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-top {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .top-bar,
+  .navbar,
+  .features,
+  .product-items-container,
+  .container,
+  .veg-cards-container,
+  .exotic-hero,
+  .footer-cols {
+    padding: 10px;
+  }
+
+  .navbar nav ul {
+    align-items: center;
+  }
+}

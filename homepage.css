@@ -721,6 +721,8 @@ footer .copyright {
   margin-top: 30px;
   font-size: 13px;
 }
+
+/* //1
 @media screen and (max-width: 375px) {
   .top-bar,
   .navbar,
@@ -921,130 +923,209 @@ footer .copyright {
 
   .productsheading p {
     font-size: 18px;
-  }
-}
+    }
+} */
+                                                                                                                                  
 
-
-
-
-
-@media only screen and (max-width: 767px) {
-  /* Top bar */
-  .top-bar {
-    flex-direction: column;
-    text-align: center;
-    font-size: 12px;
-  }
-
-  .top-bar .left, .top-bar .right {
-    margin: 5px 0;
-  }
-
-  /* Navbar */
+/* responsive  tab mode */
+/* @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
   }
 
   .navbar nav ul {
     flex-direction: column;
-    align-items: center;
+    gap: 10px;
   }
 
-  .navbar .icons {
-    margin-top: 10px;
-  }
-
-  /* Hero section */
   .hero {
+    flex-direction: column;
+  }
+
+  .footer-cols {
+    flex-direction: column;
+  }
+
+  .product-items-container {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .veg-cards-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .exotic-hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .exotic-image-container img {
+    width: 100%;
+    max-width: 300px;
+  }
+} */
+
+
+/* -- Responsive Design -- */
+
+/* @media (max-width: 1200px) {
+  .navbar, .top-bar, .features {
+    margin: 0 50px;
+  }
+  .hero {
+    padding-left: 100px;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar, .top-bar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero {
+    flex-direction: column;
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  .hero-image img {
+    width: 80%;
+    height: auto;
+  }
+
+  .productsheading {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .homeneeds {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .product-items-container {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+
+  .container {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .exotic-hero {
+    flex-direction: column;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .exotic-image-container {
+    margin-top: 20px;
+  }
+
+  .footer-cols {
     flex-direction: column;
     text-align: center;
   }
 
-  .hero .hero-text h1 {
-    font-size: 20px;
+  .footer-cols div {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .producttext {
+    font-size: 36px;
   }
 
-  .search-bar {
-    flex-direction: column;
-    gap: 5px;
-  }
-
-  .search-bar input, .search-bar button {
-    width: 100%;
-  }
-
-  .hero-image img {
-    width: 100%;
-    height: auto;
-  }
-
-  /* Features */
-  .features {
+  .products {
     flex-direction: column;
     align-items: center;
-    gap: 15px;
   }
 
-  /* Product Cards Grid */
   .product-items-container {
-    display: grid;
     grid-template-columns: 1fr;
+  }
+
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-text p {
+    font-size: 24px;
+  }
+
+  .search-bar input {
+    width: 180px;
+  }
+
+  .search-bar button {
+    padding: 8px 16px;
+  }
+
+  .exotic-content h1 {
+    font-size: 2rem;
+  }
+
+  .bestsellerproducts {
+    font-size: 32px;
+  }
+
+  .bestsellerdesc {
+    font-size: 16px;
+  }
+
+  .fresh-veg-section h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 30px;
+  }
+
+  .top-bar {
+    font-size: 12px;
     padding: 10px;
+  }
+
+  .search-bar input {
+    width: 150px;
+  }
+
+  .product-card {
+    width: 100%;
   }
 
   .items-container {
     width: 100%;
   }
 
-  /* Three Card Section */
-  .container {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .card img {
+  .card {
     width: 100%;
   }
 
-  /* Fresh Veg Section */
-  .veg-cards-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
-  }
-
-  .veg-card img {
-    width: 100%;
-  }
-
-  /* Exotic Section */
-  .exotic-hero {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .exotic-image-container img {
-    width: 100%;
-  }
-
-  /* Bestseller Products */
-  .products {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
-    padding: 10px;
-  }
-
-  .product-card img {
-    width: 100%;
-  }
-
-  /* Footer */
-  .footer-cols {
-    flex-direction: column;
-    text-align: center;
-    gap: 15px;
+  .hero {
+    padding: 20px;
   }
 
   .footer-top {
@@ -1052,7 +1133,260 @@ footer .copyright {
     gap: 10px;
   }
 
-  .footer-top input, .footer-top button {
-    width: 100%;
+  .footer-top input,
+  .footer-top button {
+    width: 90%;
+    border-radius: 25px;
+  }
+
+  .footer-top button {
+    border-radius: 25px;
+  }
+
+  .footer-cols {
+    gap: 20px;
+  }
+} */
+
+
+
+
+/* -- Responsive Design -- */
+
+@media (max-width: 1200px) {
+  .navbar, .top-bar, .features {
+    margin: 0 50px;
+  }
+  .hero {
+    padding-left: 100px;
   }
 }
+
+@media (max-width: 992px) {
+  .navbar, .top-bar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero {
+    flex-direction: column;
+    padding: 30px 20px;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .hero-text {
+    text-align: center;
+  }
+
+  .hero-image {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-image img {
+    width: 80%;
+    height: auto;
+  }
+
+  .productsheading {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .homeneeds {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .product-items-container {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+
+  .container {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .exotic-hero {
+    flex-direction: column;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .exotic-image-container {
+    margin-top: 20px;
+  }
+
+  .footer-cols {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-cols div {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .producttext {
+    font-size: 36px;
+  }
+
+  .products {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-items-container {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-text p {
+    font-size: 24px;
+  }
+
+  .search-bar input {
+    width: 180px;
+  }
+
+  .search-bar button {
+    padding: 8px 16px;
+  }
+
+  .exotic-content h1 {
+    font-size: 2rem;
+  }
+
+  .bestsellerproducts {
+    font-size: 32px;
+  }
+
+  .bestsellerdesc {
+    font-size: 16px;
+  }
+
+  .fresh-veg-section h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 30px;
+  }
+
+  .top-bar {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  .hero {
+    flex-direction: column;
+    padding: 20px 10px;
+    gap: 30px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-text {
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 1.8rem;
+    line-height: 1.4;
+  }
+
+  .hero-text p {
+    font-size: 18px;
+  }
+
+  .search-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    position: static;
+  }
+
+  .search-bar input {
+    width: 100%;
+    max-width: 250px;
+    font-size: 14px;
+  }
+
+  .search-bar button {
+    padding: 8px 16px;
+    font-size: 14px;
+    width: auto;
+    position: static;
+    transform: none;
+  }
+
+  .hero-image {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-image img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+  }
+
+  .image-text {
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12px;
+    padding: 4px 10px;
+    position: absolute;
+    background: orange;
+    color: white;
+    border-radius: 5px;
+  }
+
+  .product-card,
+  .items-container,
+  .card {
+    width: 100%;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-top input,
+  .footer-top button {
+    width: 90%;
+    border-radius: 25px;
+  }
+
+  .footer-top button {
+    border-radius: 25px;
+  }
+
+  .footer-cols {
+    gap: 20px;
+  }
+}
+
+
+
+
