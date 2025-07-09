@@ -1153,16 +1153,16 @@ footer .copyright {
 
 /* -- Responsive Design -- */
 
-@media (max-width: 1200px) {
+@media (max-width: 767px) {
   .navbar, .top-bar, .features {
     margin: 0 50px;
   }
   .hero {
     padding-left: 100px;
   }
-}
 
-@media (max-width: 992px) {
+
+
   .navbar, .top-bar {
     flex-direction: column;
     align-items: center;
@@ -1238,7 +1238,7 @@ footer .copyright {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 764px) {
   .producttext {
     font-size: 36px;
   }
@@ -1283,9 +1283,9 @@ footer .copyright {
   .fresh-veg-section h2 {
     font-size: 1.5rem;
   }
-}
 
-@media (max-width: 480px) {
+
+
   .logo {
     font-size: 30px;
   }
